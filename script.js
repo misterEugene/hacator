@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sendBtn.addEventListener("click", () => {
         const userInput = textInput.value.trim();
         if (userInput) {
-            assistantOutput.textContent = `You asked: ${userInput}`;
+            assistantOutput.textContent = `Ваш запрос: ${userInput}`;
             assistantOutput.classList.add("show");
             // Логика обработки текстового ввода
             textInput.value = ""; // Очистить поле ввода после отправки
