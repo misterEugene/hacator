@@ -1,6 +1,6 @@
 /* Основной стиль страницы */
 body {
-    background: linear-gradient(135deg, #86086b, #260c33);
+    background: linear-gradient(135deg, #260c33, #86086b);
     color: #fff;
     font-family: 'Arial', sans-serif;
     margin: 0;
