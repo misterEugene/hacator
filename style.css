@@ -1,0 +1,193 @@
+/* Основной стиль страницы */
+body {
+    background: linear-gradient(135deg, #86086b, #260c33);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Контейнер */
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Иконка профиля */
+.profile-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #d96dd7;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* Иконка настроек */
+.settings-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #d96dd7;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.settings-icon:hover {
+    transform: rotate(90deg);
+    color: #fff;
+}
+
+/* Стиль голосового помощника */
+.voice-assistant {
+    margin-top: 250px;
+}
+
+/* Стиль кнопки микрофона */
+.microphone {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #86086b, #260c33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.microphone:hover {
+    transform: scale(1.2);
+}
+
+.mic-inner {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.activate-btn {
+    background-color: #d96dd7;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.activate-btn:hover {
+    background-color: #b156ab;
+    transform: scale(1.05);
+}
+
+.chat-history {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-message {
+    background-color: #d96dd7;
+    color: #260c33;
+    text-align: right;
+}
+
+.assistant-message {
+    background-color: #ffffff;
+    color: #260c33;
+    text-align: left;
+}
+
+.assistant-output {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 30px;
+}
+
+.assistant-output.show {
+    opacity: 1;
+}
+
+/* Поле ввода текста */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.input-container input {
+    width: 300px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    color: #260c33;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.input-container button {
+    background-color: #d96dd7;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* padding: 150px; */
+    
+}
+
+.input-container button:hover {
+    background-color: #b156ab;
+    transform: scale(1.05);
+}
